@@ -8,6 +8,22 @@
 <body>
     <div class="container">
         <div class="ctrlPanel">
+            <form id="controls">
+                <div>
+                    <input type="radio" id="solid" value="solid" name="color" checked>
+                    <label for="solid">Solid color</label>
+                </div>
+                <div style="margin-bottom: 1em">
+                    <input type="radio" id="random" value="random" name="color">
+                    <label for="random">Random color</label>
+                </div>
+                    
+                <input type="color" name="solidcolor">
+                <!-- <label for="clear">Clear canvas: </label> -->
+                <button name="clear" type="button" class=".clearBtn">Clear!</button>
+                <label for="size">Canvas size: </label>
+                <input type="range" min="3" max="96" step="1" value="16" name="size">
+            </form>
         </div>
         <div class="canvas" id="canvas">
 

@@ -1,3 +1,7 @@
+body {
+    background-color: cornsilk;
+    font-family: sans-serif;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -8,4 +12,20 @@
     background-color: white;
     border: 3px ridge burlywood;
     display: grid;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    height: 100%;
+}
+
+.ctrlPanel {
+    margin-right: 5em;
+
+}
+
+#controls>input, button {
+    margin-bottom: 1em;
 }
